@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>Company details</title>
+        <style>
+            .td{
+                padding : 10px;
+                background-color: cyan;
+            }
+            
+            a{
+                text-decoration: none;
+                
+                color:brown;
+                
+            }
+            a:hover{
+                color : rgb(68, 0, 255);
+            }
+            img{
+                width : 100%;
+                height : 10%;
+            }
+            #lastbox{
+                background-color: cyan;
+                width : 100%;
+                height:50%;
+            }
+            #left{
+                float:left;
+            }
+            #right{
+                margin-top : 2px;
+                float:right;
+            }
+            .logo1{
+                width :30%;
+                height : 80px;  
+                
+            }
+            .logo2{
+                width: 20%;
+                height : 100px;
+            }
+            .logo3{
+                width: 20%;
+                height : 150px;
+            }
+            .logo4{
+                width : 20%;
+                height : 100px;
+            }
+            input[type="submit"]{
+                color:black;
+                background-color: cyan;
+                border-radius:10px;
+                margin-left:50px;
+                width : 15%;
+                height : 5%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <img  src="https://bit.ly/2OVuXWu ">
+        <hr>
+        <table border='7' align:center style="border-radius:10px;">
+            <tr class="tr">
+                <td class="td"><a href="home.html"><b>HOME</b></a></td>
+                <td class="td"><a href="login.html"><b>LOGIN</b></a></td>
+                <td class="td"><a href="register.html"><b>REGISTER</b></a></td>
+                <td class="td"><a href="company.html"><b>COMPANY DETAILS</b></a></td>
+                <td class="td"><a href="alumni.html"><b>ALUMNI</b></a></td>
+                <td class="td"><a href="placements.html"><b>PLACEMENTS STAFF</b></a></td>
+                <td class="td"><a href="personal.html"><b>STUDENT PERSONAL INFO</b></a></td>
+                <td class="td"><a href="academic.html"><b>STUDENT ACADEMIC INFO</b></a></td>
+                <td class="td"><a href="aggregate.html"><b>AGGREGATES</b></a></td>
+            </tr>
+        </table>
+        <hr>  
+        <h1 style="text-align: center;">Company Details</h1>
+        
+                    <img class="logo1" src="https://bit.ly/39XFhFm">
+                
+                    <input  type="reset" value="Students placed in Capgemini" onclick="appear(1)">
+                    <br>
+                    <span id="capgemini" >
+                        <ul type="3">
+                            <li>Adharsh</li>
+                            <li>Ambika</li>
+                            <li>Adhya</li>
+                        </ul>
+                    </span>
+                    <br>
+                    <img class="logo2" src="https://bit.ly/2STEe3Q">
+                    
+                    <input  type="reset" value="Students placed in Microsoft" onclick="appear(2)">
+                    <br>
+                    <span id="microsoft" >
+                        <ul type="3">
+                            <li>Dhaksh</li>
+                            <li>Dharma</li>
+                            <li>Divakar</li>
+                        </ul>
+                    </span>
+                        <br>
+                    <img class="logo3"  src="https://pngimg.com/uploads/amazon/amazon_PNG13.png">
+                    
+                    <input  type="reset" value="Students placed in Amazon" onclick="appear(3)">
+                    <br>
+                    <span id="amazon" >
+                        <ul type="3">
+                            <li>Aravind</li>
+                            <li>Ambika</li>
+                            <li>Adhya</li>
+                        </ul>
+                    </span>
+                    <br>
+                    <img class="logo4" src="https://bit.ly/2SS3uau">
+                    
+                    <input type="reset" value="Students placed in Google" onclick="appear(4)">
+                    <br>
+                    <span id="google" >
+                        <ul type="3">
+                            <li>Harsh</li>
+                            <li>Barney</li>
+                            <li>Robin</li>
+                        </ul>
+                    </span>
+                 <script>
+                     document.getElementById("capgemini").style.visibility="hidden";
+                     document.getElementById("microsoft").style.visibility="hidden";
+                     document.getElementById("google").style.visibility="hidden";
+                     document.getElementById("amazon").style.visibility="hidden";
+                     function appear(a){
+                            if(a==1)
+                            {
+                                document.getElementById("capgemini").style.visibility="visible";
+                            }
+                            if(a==2)
+                            {
+                                document.getElementById("microsoft").style.visibility="visible";
+                            }
+                            if(a==3){
+                                document.getElementById("amazon").style.visibility="visible";
+                            }
+                            if(a==4)
+                            {
+                                document.getElementById("google").style.visibility="visible";
+                            }
+                     }
+                 </script>  
+    </body>
+</html>
